@@ -10,6 +10,13 @@ body {
     align-items: center;
     background-color: rgba(179, 178, 178, 0.479);
     border-radius: 20px;
+    text-align: center; 
+    position:absolute;
+    top: 50%;
+    margin-top: -225px;
+    left: 50%;
+    margin-left: -350px;
+
 }
 
 .cuadrado-singin {
@@ -25,13 +32,14 @@ body {
     font-family: Raleway;
     font-weight: 400;
     text-align: center;
+    padding: 40px;
 }
 
 .cuad-activo input {
     font-family: Raleway;
     border-radius: 5px;
     border-style: none;
-    margin: 5px;
+    margin: 7px;
     height: 30px;
     width: 200px;
     margin-right: 85px;
@@ -54,7 +62,7 @@ body {
     font-weight: 600;
     font-size: 15px;
     color: white;
-    margin: 20px 100px;
+    margin-top: 40px;
     border: 1px solid rgb(36, 97, 146);
 }
 
@@ -66,3 +74,18 @@ body {
     background-color: #F1EDEE;    
     float: right;
 }
+
+.cuad-inactivo {
+    width: 700px;
+    height: 450px;
+    align-items: center;
+    background-color: rgba(179, 178, 178, 0.479);
+    border-radius: 20px;
+    text-align: center; 
+    position:absolute;
+    top: 50%;
+    margin-top: -225px;
+    left: 50%;
+    margin-left: -350px;    
+}
+
