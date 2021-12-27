@@ -9,17 +9,19 @@ body {
     height: 450px;
     align-items: center;
     border-radius: 20px;
-    text-align: center; 
+    text-align: center;
     position:absolute;
     top: 50%;
     margin-top: -225px;
     left: 50%;
     margin-left: -350px;
-    overflow: hidden;
-    display: inline-block;
+    display: grid;
+    grid:
+        'derecha izquierda';
+    box-shadow: -5px 6px 10px rgba(77, 76, 76, 0.603);
+    background-color: #d6d6d615;
     z-index: bottom;
-    display: none;
-
+    overflow: hidden;
 }
 
 .cuad-activo h2 {
@@ -67,8 +69,9 @@ body {
     border-bottom-left-radius: 20px;
     background-color: #F1EDEE;    
     display: inline-block;
-    position: absolute;
-    transform: translateX(-200%);
+    grid-area: derecha;
+    transform: translateX(-100%);
+    z-index: 1;
 }
 
 .cuadrado-signup {
@@ -78,23 +81,9 @@ body {
     border-bottom-right-radius: 20px;
     background-color: #F1EDEE;    
     display: inline-block;
-    position: absolute;
-}
-
-.cuad-inactivo {
-    width: 700px;
-    height: 450px;
-    align-items: center;
-    border-radius: 20px;
-    top: 50%;
-    margin-top: -225px;
-    left: 50%;
-    margin-left: -350px;    
-    line-height: 450px;
-    box-shadow: -5px 6px 10px rgba(77, 76, 76, 0.603);
-  /*   overflow: hidden; */
-    position:absolute;
-}   
+    grid-area: izquierda;
+    z-index: 1;
+}  
 
 .inac-signin {
     width: 350px;
@@ -103,6 +92,8 @@ body {
     border-bottom-left-radius: 20px; 
     text-align: center;
     display: inline-block;
+    grid-area: derecha;
+    line-height: 450px;
 }
 
 .inac-signup {
@@ -112,36 +103,7 @@ body {
     border-bottom-right-radius: 20px;
     text-align: center;
     display: inline-block;
-    
+    grid-area: izquierda;
+    line-height: 450px;
+    transform: translateX(100%)
 }
-
-.signInBtn {
-    width: 150px;
-    height: 50px;
-    background: linear-gradient(90deg, rgba(35,92,148,1) 0%, rgba(68,132,133,1) 100%);
-    border-style: none;
-    border-radius: 30px;
-    font-family: Raleway;
-    font-weight: 600;
-    font-size: 15px;
-    color: white;
-    margin-top: 40px;
-    border: 1px solid rgb(36, 97, 146);
-    display: inline-block;
-}   
-
-.signUpBtn {
-    width: 150px;
-    height: 50px;
-    background: linear-gradient(90deg, rgba(35,92,148,1) 0%, rgba(68,132,133,1) 100%);
-    border-style: none;
-    border-radius: 30px;
-    font-family: Raleway;
-    font-weight: 600;
-    font-size: 15px;
-    color: white;
-    margin-top: 40px;
-    border: 1px solid rgb(36, 97, 146);    
-    display: inline-block;
-}
-
