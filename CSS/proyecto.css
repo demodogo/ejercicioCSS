@@ -74,6 +74,12 @@ body {
     z-index: 1;
 }
 
+.cuadrado-signin a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 .cuadrado-signup {
     width: 350px;
     height: 450px;
